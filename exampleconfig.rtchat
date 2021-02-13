@@ -1,0 +1,6 @@
+# Please enter OAUTH-KEY you can generate it on https://twitchapps.com/tmi/
+twitchOAuth: oauth:THISISAREALTOKENPOG
+# Please enter the name of the account that generatet oauth!
+twitchUsername: JohnDoe343547
+# Please enter Channelname from that you want see the chat
+twitchChannel: pewdiepie
