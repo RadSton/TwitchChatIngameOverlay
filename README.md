@@ -10,6 +10,8 @@ Installation:
 6. Start the application again you will get a transparent window where you can see the chat
 7. Have fun!
 
+Used Libary: https://github.com/TooTallNate/Java-WebSocket
+
 Sorry for the bad desing of the app! In the future i will add new parameters to the config and eventually a follower and sub counter
 
 Im not an English guy! Sorry for bad language!
