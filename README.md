@@ -12,6 +12,8 @@ Installation:
 
 Used Libary: https://github.com/TooTallNate/Java-WebSocket
 
+If you want to submit a feature go to the "Issues" tab I opend a request for it
+
 Sorry for the bad desing of the app! In the future i will add new parameters to the config and eventually a follower and sub counter
 
 Im not an English guy! Sorry for bad language!
