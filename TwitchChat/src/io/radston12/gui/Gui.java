@@ -2,7 +2,6 @@ package io.radston12.gui;
 
 import static io.radston12.vars.GuiVariables.jf;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.MouseInfo;
 import java.awt.Point;
@@ -17,6 +16,7 @@ import javax.swing.JLabel;
 
 import io.radston12.Main;
 import io.radston12.draw.Drawer;
+import io.radston12.util.ColorHelper;
 import io.radston12.vars.GuiVariables;
 public class Gui {
 
@@ -28,7 +28,7 @@ public class Gui {
 		jf.setAlwaysOnTop(true);
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jf.setUndecorated(true);
-		jf.setBackground(new Color(0.5f, 0.5f, 0.5f, 0.5f));
+		jf.setBackground(ColorHelper.getColor(GuiVariables.color, 0.2f));
 		jf.setVisible(true);
 		jf.addMouseMotionListener(new Gui.DragListener());
 		jf.addMouseListener(new Gui.EnterListener());
@@ -40,11 +40,12 @@ public class Gui {
 	
 	public static void updateScreen() {
 		if(GuiVariables.mouseInScreen) {
-			jf.setBackground(new Color(0.7f, 0.7f, 0.7f, 0.5f));
+			jf.setBackground(ColorHelper.getColor(GuiVariables.color, 0.5f));
 		} else {
-			jf.setBackground(new Color(0.3f, 0.3f, 0.3f, 0.2f));
+			jf.setBackground(ColorHelper.getColor(GuiVariables.color, 0.1f));
 		}
 	}
+	
 	
 	public class DragListener extends MouseMotionAdapter {
 
@@ -95,7 +96,7 @@ public class Gui {
 	    	}
 		}
 	}
-	
+	public static int FPS = 0;
 	public static class Loop {
 
 		public final static int DELAY = 1000;
@@ -106,6 +107,7 @@ public class Gui {
 				public void run() {
 					Main.instance.update();
 					c.repaint();
+					FPS = 0;
 				}
 			},(long) DELAY, DELAY);
 		}
