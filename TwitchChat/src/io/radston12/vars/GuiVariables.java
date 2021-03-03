@@ -8,5 +8,7 @@ public class GuiVariables {
 	public static int LINESEPARATORHEIGHT = 5;
 	public static JFrame jf;
 	public static boolean mouseInScreen, hoversExit;
+	public static String color = "#fffff";
+	public static Color fontColor = Color.WHITE;
 	
 }
