@@ -25,7 +25,7 @@ public class Drawer extends JLabel {
 		}
 		
 		g.setFont(new Font("Arial", Font.PLAIN, 16));
-		g.setColor(Color.WHITE);
+		g.setColor(GuiVariables.fontColor);
 		int height = 20;
 		int fontheigth = g.getFontMetrics().getHeight();
 		for(String s : Main.instance.messageString.split(System.getProperty("line.separator"))) {
