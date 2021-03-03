@@ -4,3 +4,8 @@ twitchOAuth: oauth:THISISAREALTOKENPOG
 twitchUsername: JohnDoe343547
 # Please enter Channelname from that you want see the chat
 twitchChannel: pewdiepie
+#
+# Customize Background color of Application (HEX Color key)
+backgroundColor: #739342
+# Customize Text color of Chat (HEX Color key)
+textColor: # 243937
